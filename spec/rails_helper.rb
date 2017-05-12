@@ -43,7 +43,7 @@ RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   # add 'FactoryGirl' methods
-  config.include FacotryGirl::Syntax::Methods
+  config.include FactoryGirl::Syntax::Methods
 
   # start by truncating all the tables but then use the faster transaction strategy the rest of the time.
   config.before(:suite) do
