@@ -1,6 +1,6 @@
 FactoryGirl.define do 
-	factory :itmem do 
-		name { Facer::Starwars.character }
+	factory :item do 
+		name { Faker::StarWars.character }
 		done false
 		todo_id nil
 	end
