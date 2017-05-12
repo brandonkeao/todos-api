@@ -10,7 +10,7 @@ RSpec.describe 'Todos API', type: :request do
 		# make HTTP get request before each example
 		before { get '/todos' }
 
-		it 'returns todos' do 
+		it 'returns todo' do 
 			# Note 'json' is the custom helper to psrse JSON responses
 			expect(json).not_to be_empty
 			expect(json.size).to eq(10)
